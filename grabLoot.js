@@ -3,9 +3,9 @@ function sleep(ms) {
 }
 async function main() {
     console.log('Auto Channel Points Clicker & Point Tracker: Waiting for page to load... then grabbing...');
-    await sleep(9000);
-    console.log("Auto Channel Points Clicker & Point Tracker: Looking for points now! PogU");
+    await sleep(5000);
     interval_Grabber = setInterval(function() {
+        console.log("hello");
         function clickTwitchButton() {
             document.getElementsByClassName("tw-button tw-button--success tw-interactive")[0].click();
         }
