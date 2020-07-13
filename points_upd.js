@@ -46,7 +46,6 @@ interval_1s = setInterval(function() {
         pts_4s_delay = grab_points();
     };
 }, 1000);
-main();
 
 function grab_points() {
     var points_element = document.getElementsByClassName("tw-tooltip tw-tooltip--align-center tw-tooltip--right");
