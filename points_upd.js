@@ -12,39 +12,38 @@ document.onreadystatechange = function () {
         }
         async function main() {
             console.log('Channel Points Grabber: Waiting for page to load.');
-            await sleep(6000);
+            await sleep(4000);
             interval_1s = setInterval(function() {
                 difference = grab_points() - pts_5s_delay;
                 if (difference >= 1) {
-                    console.log("Difference detected, difference:", difference);
+                    console.log("Auto Channel Points & Point Tracker: Points changed by -" + difference + "." + " Adding " + difference + " to your total points grabbed.");
+                }
+                if (difference = null) {
+                    difference = 0;
                 }
                 switch(difference) {
                     case 50: // tier 0 sub
                         chrome.storage.sync.get(['points'], function(result) {
-                            addToPoints = result.points + 50
-                            console.log(addToPoints + "points to add.");
-                            chrome.storage.sync.set({'points': addToPoints}, function() {console.log("LocalStorage 50.");});
+                            addToPoints = result.points + 50;
+                            chrome.storage.sync.set({'points': addToPoints}, function() {});
                         })
                         break;
                     case 60: // tier 1 sub
                         chrome.storage.sync.get(['points'], function(result) {
-                            addToPoints = result.points + 60
-                            console.log(addToPoints + "points to add.");
-                            chrome.storage.sync.set({'points': addToPoints}, function() {console.log("LocalStorage 60.");});
+                            addToPoints = result.points + 60;
+                            chrome.storage.sync.set({'points': addToPoints}, function() {});
                         }) 
                         break;
                     case 70: // tier 2 sub
                         chrome.storage.sync.get(['points'], function(result) {
-                            addToPoints = result.points + 70
-                            console.log(addToPoints + "points to add.");
-                            chrome.storage.sync.set({'points': addToPoints}, function() {console.log("LocalStorage 70.");});
+                            addToPoints = result.points + 70;
+                            chrome.storage.sync.set({'points': addToPoints}, function() {});
                         }) 
                         break;
                     case 100: // tier 3 sub
                         chrome.storage.sync.get(['points'], function(result) {
-                            addToPoints = result.points + 100
-                            console.log(addToPoints + "points to add.");
-                            chrome.storage.sync.set({'points': addToPoints}, function(){console.log("LocalStorage 100.");});
+                            addToPoints = result.points + 100;
+                            chrome.storage.sync.set({'points': addToPoints}, function(){});
                         })
                         break;
                     default: // No points, default.
@@ -58,8 +57,6 @@ document.onreadystatechange = function () {
         main();
     };
 };    
-
-        
 
 function grab_points() {
     var points_element = document.getElementsByClassName("tw-tooltip tw-tooltip--align-center tw-tooltip--right");
