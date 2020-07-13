@@ -11,15 +11,15 @@ document.onreadystatechange = function () {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
         async function main() {
-            console.log('Channel Points Grabber: Waiting for page to load.');
+            console.log('Auto Channel Points & Point Tracker: Waiting for page to load.');
             await sleep(4000);
             interval_1s = setInterval(function() {
                 difference = grab_points() - pts_5s_delay;
-                if (difference >= 1) {
-                    console.log("Auto Channel Points & Point Tracker: Points changed by -" + difference + "." + " Adding " + difference + " to your total points grabbed.");
+                if (difference == 50 || difference == 60 || difference == 70 || difference == 100) {
+                    console.log("Auto Channel Points & Point Tracker: points changed by -" + difference + "." + " Adding " + difference + " to your total points grabbed.");
                 }
-                if (difference = null) {
-                    difference = 0;
+                if (difference == null) {
+                    difference == 0;
                 }
                 switch(difference) {
                     case 50: // tier 0 sub
