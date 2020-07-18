@@ -9,7 +9,7 @@ interval_4s = setInterval(function() {
 interval_1s = setInterval(function() {
     difference = grab_points() - pts_4s_delay;
     if (difference == 50 || difference == 60 || difference == 70 || difference == 100) {
-        console.log("Twitch Auto Channel Points Clicker & Point Tracker: points changed by " + difference + "." + " Adding " + difference + " to your total points grabbed.");
+        console.log("Twitch Auto Points Clicker & Point Tracker: points changed by " + difference + "." + " Adding " + difference + " to your total points grabbed.");
     }
     if (difference == null) {
         difference == 0;

@@ -1,5 +1,5 @@
 {
-  "name": "Twitch Auto Channel Points Clicker & Point Tracker",
+  "name": "Twitch Auto Points Clicker & Point Tracker",
   "version": "1.0.3",
   "manifest_version": 2,
   "content_scripts": [
