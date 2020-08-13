@@ -47,8 +47,9 @@ interval_1s = setInterval(function() {
     };
 }, 1000);
 
+// tw-tooltip tw-tooltip--align-center tw-tooltip--right
 function grab_points() {
-    var points_element = document.getElementsByClassName("tw-tooltip tw-tooltip--align-center tw-tooltip--right");
+    var points_element = document.querySelectorAll('[data-test-selector="balance-string"]');
         for (var i = 0; i < points_element.length; i++) {
             var innertext_points = points_element[i].innerText;
             replaced_points = innertext_points.replace(/\D/g,'');
