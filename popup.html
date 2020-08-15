@@ -107,7 +107,6 @@
         content:'';
         vertical-align:middle;
     }
-    
 </style>
 <body>
     <div id="top_div">
@@ -121,15 +120,6 @@
         <hr class="hr_onboard"></hr>
         <div class="overlay_bg"></div>
         <div class="drop_bg_color" style="z-index: -1;"></div>
-        <label class=""></label>
-        <div class="extension_switch">        
-            <input id="onOffSwitch" 
-                type="checkbox" 
-                    style="display:none;">
-            </input>
-            <label for="onOffSwitch" class="toggle"><span></span></label>
-            <script src="content.js"></script>
-        </div>
         <div class="wrapper_archive">
             <div class="archive">
                 <label class="points_grabbed" style="color:white;">Points Grabbed by extension:</label>
@@ -140,85 +130,3 @@
     </div>
 </body>
 </html>
-
-<!-- Auth Link: https://id.twitch.tv/oauth2/authorize?client_id=wr0t7kb5oh0c1nczpqbcmi152xr5m4&redirect_uri=https://www.twitch.tv&response_type=token+id_token&scope=user_subscriptions+openid&state=c4c81qqj4811dbumxyelj9sfmjr3oe 
-    <hr class="hr_onboard"></hr>
-    <div class="drop_bg_color" style="z-index: -1;"></div>
-    <div class="twitch_logo">
-        <img src="twitch_logo.png">
-    </div>
-    <div class="vl"></div>
-    <div class="buttons_onboarding" id="buttons_onboarding">
-        <div class="link_button">
-            <button id="onInstall_Button1" class="onInstall_Button1" type="button">Link</button>
-            <script src="event_twitch_auth.js" charset="utf-8"></script>
-        </div>
-    </div>
-    <button href="#" class="close"></button>
-        .toggle {
-        position: relative;
-        margin-top:5px;
-        margin-left: 7px;
-        display: block;
-        width: 40px;
-        height: 20px;
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transform: translate3d(0, 0, 0);
-    }
-    .toggle:before {
-        content: "";
-        position: relative;
-        top: 3px;
-        left: 3px;
-        width: 34px;
-        height: 14px;
-        display: block;
-        background: #9A9999;
-        border-radius: 8px;
-        transition: background 0.2s ease;
-    }
-    .toggle span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        display: block;
-        background: grey;
-        border-radius: 10px;
-        box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
-        transition: all 0.2s ease;
-    }
-    .toggle span:before {
-        content: "";
-        position: absolute;
-        display: block;
-        margin: -18px;
-        width: 56px;
-        height: 56px;
-        background: rgba(79, 46, 220, 0.5);
-        border-radius: 50%;
-        transform: scale(0);
-        opacity: 1;
-        pointer-events: none;
-    }
-
-    #onOffSwitch:checked + .toggle:before {
-        background: #9146ff;
-    }
-    #onOffSwitch:checked + .toggle span {
-        background: #9146ff;
-        transform: translateX(20px);
-        transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
-        box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
-    }
-    #onOffSwitch:checked + .toggle span:before {
-        transform: scale(1);
-        opacity: 0;
-        transition: all 0.4s ease;
-    }
-
-
--->
-
