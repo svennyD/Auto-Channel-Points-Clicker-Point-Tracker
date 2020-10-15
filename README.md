@@ -2,7 +2,7 @@
 
 
 -----
-Clicks a blue button at www.twitch.tv so you don't have to.
+Clicks a blue button (Channel Point Chests) at www.twitch.tv so you don't have to.
 
 
 Features:
