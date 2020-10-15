@@ -5,7 +5,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.twitch.tv/*"],
-      "js": ["restore_points.js","points_upd.js","grabLoot.js","title_text.js"]
+      "js": ["restore_points.js","content.js","grabLoot.js","title_text.js"]
     }
   ],
   "icons": { 

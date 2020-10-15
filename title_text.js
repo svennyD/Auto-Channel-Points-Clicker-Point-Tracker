@@ -4,3 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('num_points').title = result.points;
     });
 },false);
+
+
+
+
