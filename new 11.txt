@@ -1,0 +1,1 @@
+code --crash-reporter-directory='C:\Users\SvenH\Desktop\CrashVSCODE'

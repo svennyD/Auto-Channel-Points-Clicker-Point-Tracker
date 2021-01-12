@@ -1,6 +1,5 @@
 MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
 var observer = new MutationObserver(function(mutations, observer) {
-    console.log("")
     mutations.forEach(function(mutation) {
          if (mutation.type == "attributes") {
              if (mutation.attributeName == "id") {

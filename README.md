@@ -2,7 +2,7 @@
 
 
 -----
-Clicks a blue button (Channel Point Chests) at www.twitch.tv so you don't have to.
+Clicks a blue button at www.twitch.tv so you don't have to.
 
 
 Features:
@@ -18,10 +18,3 @@ Permissions explained:
 
     • "storage" permission - Extension stores your points to your sync profile of your current browser. Also used to display points in the extension popup.
     • "https://*.twitch.tv/*"/host permissions - Only run the extension at the Twitch.tv domain.
-
-
-
-
-
-
-https://chrome.google.com/webstore/detail/twitch-auto-points-clicke/afflghncaaiaebonpbplhpjhbkaciaim?hl=en&authuser=0

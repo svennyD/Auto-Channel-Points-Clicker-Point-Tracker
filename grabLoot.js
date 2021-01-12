@@ -6,7 +6,7 @@ async function main() {
     await sleep(4000);
     interval_Grabber = setInterval(function() {
         function clickTwitchButton() {
-            document.getElementsByClassName("tw-button tw-button--success tw-interactive")[0].click();
+            document.getElementsByClassName("tw-button tw-button--success")[0].click();
         }
         try {
             clickTwitchButton();

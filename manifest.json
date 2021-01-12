@@ -1,7 +1,8 @@
 {
   "name": "Twitch Auto Points Clicker & Point Tracker",
-  "version": "1.0.7",
+  "version": "1.1.4",
   "manifest_version": 2,
+  "description": "Twitch point collector and point tracker.",
   "content_scripts": [
     {
       "matches": ["https://*.twitch.tv/*"],
@@ -22,6 +23,9 @@
     "default_title": "Twitch Auto Channel Points Clicker & Point Tracker",
     "default_icon": "main_icon.png",
     "default_popup": "popup.html"
+  },
+  "appDesc": {
+    "message": "Automatically claims the channel points chests on your favorite Twitch streams."
   },
   "permissions": ["storage","https://*.twitch.tv/*"]
 }
